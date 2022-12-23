@@ -1,0 +1,11 @@
+<template>
+  <div class="cardTestimonials"></div>
+</template>
+
+<script>
+export default {
+  components: {},
+};
+</script>
+
+<style lang="scss"></style>
