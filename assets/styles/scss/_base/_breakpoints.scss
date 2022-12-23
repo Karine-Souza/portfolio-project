@@ -1,35 +1,28 @@
-// Small tablets and large smartphones (landscape view)
-$screen-sm-min: 576px;
-
-// Small tablets (portrait view)
-$screen-md-min: 768px;
-
-// Tablets and small desktops
-$screen-lg-min: 992px;
-
-// Large tablets and desktops
-$screen-xl-min: 1200px;
-
-
-
-
-
 $breakpoints: (
   'small': (min-width: 768px),
   'medium': (min-width: 992px),
   'large': (min-width: 1280px)) !default;
 
+// Mixin to manage responsive breakpoints
+// @author Kitty Giraudel
+// @param {String} $breakpoint - Breakpoint name
+// @require $breakpoints
 @mixin respond-to($breakpoint) {
+
+  // If the key exists in the map
   @if map-has-key($breakpoints, $breakpoint) {
-    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+
+    // Prints a media query based on the value
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
       @content;
     }
   }
 
+  // If the key doesn't exist in the map
   @else {
     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
     +"Available breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
 
-//Ex: @include respond-to("medium") {}
+//Ex: @media (min-width: 767px) {}

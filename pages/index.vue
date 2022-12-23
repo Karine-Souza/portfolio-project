@@ -1,9 +1,9 @@
-<template>
-  <Tutorial/>
-</template>
+<template></template>
+
+<style lang="scss"></style>
 
 <script>
 export default {
-  name: 'IndexPage'
-}
+  name: "IndexPage",
+};
 </script>
