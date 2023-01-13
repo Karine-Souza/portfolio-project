@@ -1,5 +1,6 @@
 <template>
   <div class="footer">
+    <P_Hero_image></P_Hero_image>
     <div class="footer__nav">
       <div class="footer__logo">
         <img src="../../assets/images/Webflow_logo.png" />
@@ -69,10 +70,12 @@
 
 <script>
 import P_Social_media from "../../components/molecules/P_Social_media";
+import P_Hero_image from "../molecules/P_Hero_image.vue";
 
 export default {
   components: {
     P_Social_media,
+    P_Hero_image,
   },
 };
 </script>
