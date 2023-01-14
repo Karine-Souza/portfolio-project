@@ -5,7 +5,7 @@
         <a class="heroImage__link" href="#">About</a>
         <h1 class="heroImage__title">An Experience Design Agency</h1>
         <h5 class="heroImage__subtitle">Provides a full service range</h5>
-        <p class="heroImage__texto">
+        <p class="heroImage__text">
           Ability to put themselves in the merchant's shoes. It is meant to
           partner on the long run, and work as an extension of the merchant's
           team.
@@ -40,7 +40,7 @@ export default {
 <style lang="scss">
 .heroImage {
   width: 100%;
-  height: 880px;
+  height: auto;
   align-items: center;
   justify-content: center;
   background-color: #fdf0e9;
@@ -91,12 +91,45 @@ export default {
   &__link {
     text-decoration: none;
     color: #ef6d58;
+    @media (min-width: 992px) {
+    }
+    @media (min-width: 1280px) {
+      font: normal normal 400 16px/32px "Epilogue";
+    }
   }
   &__title {
+    font: normal normal 800 40px/48px "Epilogue";
+    @media (min-width: 992px) {
+    }
+    @media (min-width: 1280px) {
+      width: 417px;
+      font: normal normal 800 56px/64px "Epilogue";
+    }
   }
   &__subtitle {
+    font: normal normal 400 20px/32px "Epilogue";
+    @media (min-width: 992px) {
+    }
+    @media (min-width: 1280px) {
+      font: normal normal 400 20px/32px "Epilogue";
+    }
   }
   &__text {
+    color: #391400a3;
+    font: normal normal 400 16px/32px "Epilogue";
+    @media (min-width: 992px) {
+    }
+    @media (min-width: 1280px) {
+      width: 470px;
+      font: normal normal 400 16px/32px "Epilogue";
+    }
+  }
+  &__button {
+    @media (min-width: 992px) {
+    }
+    @media (min-width: 1280px) {
+      font: normal normal 900 14px/14.35px "Epilogue";
+    }
   }
 }
 </style>
