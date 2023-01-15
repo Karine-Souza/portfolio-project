@@ -1,15 +1,11 @@
 <template>
-  <div class="heroImage">
+  <div class="heroImage" :style="{ background: backgroundColor }">
     <div class="heroImage__container">
       <div class="heroImage__textSide">
-        <a class="heroImage__link" href="#">About</a>
-        <h1 class="heroImage__title">An Experience Design Agency</h1>
-        <h5 class="heroImage__subtitle">Provides a full service range</h5>
-        <p class="heroImage__text">
-          Ability to put themselves in the merchant's shoes. It is meant to
-          partner on the long run, and work as an extension of the merchant's
-          team.
-        </p>
+        <a class="heroImage__link" :href="href">{{ link }}</a>
+        <h1 class="heroImage__title">{{ titulo }}</h1>
+        <h5 class="heroImage__subtitle">{{ subtitulo }}</h5>
+        <p class="heroImage__text">{{ texto }}</p>
         <P_Button
           class="heroImage__button"
           :label="'About Us'"
@@ -33,6 +29,31 @@ export default {
   components: {
     P_Button,
     P_Image,
+  },
+  props: {
+    href: {
+      type: String,
+    },
+    link: {
+      type: String,
+      required: true,
+    },
+    titulo: {
+      type: String,
+      required: true,
+    },
+    subtitulo: {
+      type: String,
+      required: true,
+    },
+    texto: {
+      type: String,
+      required: true,
+    },
+    backgroundColor: {
+      type: String,
+      default: "#FDF0E9",
+    },
   },
 };
 </script>
