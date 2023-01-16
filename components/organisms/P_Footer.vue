@@ -1,6 +1,14 @@
 <template>
   <div class="footer">
-    <P_Hero_image></P_Hero_image>
+    <div class="footer__hero">
+      <P_Hero_image
+        class="footer__banner"
+        :titulo="'Help To Build Your Dream Project'"
+        :texto="`A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.`"
+        :backgroundColor="'#EF6D58'"
+        :src="require('@/assets/images/pic.png')"
+      />
+    </div>
     <div class="footer__nav">
       <div class="footer__logo">
         <img src="../../assets/images/Webflow_logo.png" />
@@ -83,7 +91,8 @@ export default {
 <style lang="scss">
 .footer {
   width: 100%;
-  background-color: #fdf0e9;
+  height: auto;
+  background-color: #28293e;
   color: #000000;
 
   @media (min-width: 992px) {
@@ -91,13 +100,83 @@ export default {
   @media (min-width: 1280px) {
   }
 
+  &__hero {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    height: 80%;
+    @media (min-width: 992px) {
+      height: 80%;
+    }
+    @media (min-width: 1280px) {
+      height: 50%;
+    }
+  }
+
+  &__banner {
+    width: 85%;
+    position: relative;
+    bottom: -68px;
+    h1 {
+      color: #ffffff;
+    }
+    p {
+      color: rgba(255, 255, 255, 0.64);
+    }
+    @media (min-width: 992px) {
+      position: relative;
+      bottom: -115px;
+    }
+    @media (min-width: 1280px) {
+      width: 85%;
+      bottom: -130px;
+    }
+
+    .heroImage__container {
+      display: flex;
+      flex-direction: column-reverse;
+      @media (min-width: 992px) {
+      }
+      @media (min-width: 1280px) {
+        flex-direction: row;
+      }
+
+      .heroImage__textSide {
+        @media (min-width: 992px) {
+        }
+        @media (min-width: 1280px) {
+          margin: 0;
+        }
+      }
+      .heroImage__imageSide {
+        @media (min-width: 992px) {
+          .heroImage__image {
+            width: 45vw;
+            height: 41.75vw;
+          }
+        }
+        @media (min-width: 1280px) {
+          .heroImage__image {
+            width: 29vw;
+            height: 29vw;
+            padding: 0;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
   &__nav {
+    background-color: #fdf0e9;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-top: 200px;
     @media (min-width: 992px) {
+      padding-top: 200px;
     }
     @media (min-width: 1280px) {
       padding: 217px 135px 68px 135px;
@@ -177,6 +256,7 @@ export default {
   }
 
   &__copyMenu {
+    background-color: #fdf0e9;
     display: flex;
     flex-direction: column;
     padding: 43px 88px;
