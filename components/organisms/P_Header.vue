@@ -3,20 +3,13 @@
     <P_Menu />
     <P_Hero_image
       class="Header__banner"
-<<<<<<< HEAD
-      :link="'About'"
-=======
       :link="'ABOUT'"
->>>>>>> banner
       :titulo="'An Experience Design Agency'"
       :subtitulo="'Provides a full service range'"
       :texto="`Ability to put themselves in the merchant's shoes. It is meant to
           partner on the long run, and work as an extension of the merchant's
           team.`"
-<<<<<<< HEAD
-=======
       :src="require('@/assets/images/pic (3).png')"
->>>>>>> banner
     />
   </div>
 </template>

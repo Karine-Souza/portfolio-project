@@ -1,14 +1,10 @@
 <template>
-<<<<<<< HEAD
-  <div class="heroImage" :style="{ background: backgroundColor }">
-=======
   <div
     class="heroImage"
     :style="{ background: backgroundColor }"
     :width="width"
     :height="height"
   >
->>>>>>> banner
     <div class="heroImage__container">
       <div class="heroImage__textSide">
         <a class="heroImage__link" :href="href">{{ link }}</a>
@@ -19,19 +15,10 @@
           class="heroImage__button"
           :label="'About Us'"
           :backgroundColor="'#Ffffff'"
-<<<<<<< HEAD
-          :width="''"
-          :height="''"
-        />
-      </div>
-      <div class="heroImage__imageSide">
-        <P_Image class="image" :src="require('@/assets/images/Bitmap8.png')" />
-=======
         />
       </div>
       <div class="heroImage__imageSide">
         <img class="heroImage__image" :src="src" :alt="alt" width="100%" />
->>>>>>> banner
       </div>
     </div>
   </div>
@@ -47,8 +34,6 @@ export default {
     P_Image,
   },
   props: {
-<<<<<<< HEAD
-=======
     label: {
       type: String,
     },
@@ -58,7 +43,6 @@ export default {
     alt: {
       type: String,
     },
->>>>>>> banner
     href: {
       type: String,
     },
@@ -82,15 +66,12 @@ export default {
       type: String,
       default: "#FDF0E9",
     },
-<<<<<<< HEAD
-=======
     width: {
       type: String,
     },
     height: {
       type: String,
     },
->>>>>>> banner
   },
 };
 </script>
@@ -104,29 +85,18 @@ export default {
   background-color: #fdf0e9;
   display: flex;
   @media (min-width: 992px) {
-<<<<<<< HEAD
-  }
-  @media (min-width: 1280px) {
-=======
     height: auto;
   }
   @media (min-width: 1280px) {
     height: auto;
->>>>>>> banner
   }
   &__container {
     flex-direction: column-reverse;
     display: flex;
-<<<<<<< HEAD
-    padding: 60px;
-    @media (min-width: 992px) {
-      flex-direction: column-reverse;
-=======
     margin: 15px;
     @media (min-width: 992px) {
       flex-direction: column-reverse;
       margin: 65px;
->>>>>>> banner
     }
     @media (min-width: 1280px) {
       flex-direction: row-reverse;
@@ -138,17 +108,6 @@ export default {
     align-items: center;
     justify-content: center;
     @media (min-width: 992px) {
-<<<<<<< HEAD
-      image {
-        width: 566px;
-        height: 585px;
-      }
-    }
-    @media (min-width: 1280px) {
-      image {
-        width: 566px;
-        height: 585px;
-=======
       .heroImage__image {
         width: 55vw;
         height: 51.75vw;
@@ -161,26 +120,16 @@ export default {
       .heroImage__image {
         width: 42vw;
         height: 42vw;
->>>>>>> banner
       }
     }
   }
   &__textSide {
-<<<<<<< HEAD
-    margin: 15px;
-
-    @media (min-width: 992px) {
-    }
-    @media (min-width: 1280px) {
-      margin: 171px 188px 240px 130px;
-=======
     @media (min-width: 992px) {
       justify-content: center;
       align-items: center;
     }
     @media (min-width: 1280px) {
       padding: 65px 20px 20px 60px;
->>>>>>> banner
     }
   }
 

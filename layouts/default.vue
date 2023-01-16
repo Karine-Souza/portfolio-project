@@ -2,9 +2,9 @@
   <div class="layout">
     <P_Header />
     <P_Latest_work />
-    <!-- <P_Banner /> -->
+    <P_Banner />
     <P_Testimonials />
-    <!-- <P_Footer /> -->
+    <P_Footer />
   </div>
 </template>
 
