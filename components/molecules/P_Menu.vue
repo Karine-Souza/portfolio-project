@@ -1,30 +1,37 @@
 <template>
   <div class="menu">
-    <div class="menu__links">
-      <ul class="menu__list">
-        <li class="menu__listItems">
-          <a class="menu__item menu__item1" href="#" target="_blank">About</a>
-        </li>
-        <li>
-          <a class="menu__item menu__item2" href="#" target="_blank"
-            >Services</a
-          >
-        </li>
-        <li>
-          <a class="menu__item menu__item3" href="#" target="_blank">Pricing</a>
-        </li>
-        <li>
-          <a class="menu__item menu__item3" href="#" target="_blank">Blog</a>
-        </li>
-      </ul>
+    <div class="menu__content">
+      <div class="menu_logo">
+        <img src="../../assets/images/logo.png" class="footer_logoImg" />
+      </div>
+      <div class="menu__links">
+        <ul class="menu__list">
+          <li class="menu__listItems">
+            <a class="menu__item menu__item1" href="#" target="_blank">About</a>
+          </li>
+          <li>
+            <a class="menu__item menu__item2" href="#" target="_blank"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a class="menu__item menu__item3" href="#" target="_blank"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a class="menu__item menu__item3" href="#" target="_blank">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <P_Button
+        class="menu__button"
+        label="Contact"
+        :backgroundColor="'#28293e'"
+        :width="'138px'"
+        :height="'48px'"
+      />
     </div>
-    <P_Button
-      class="menu__button"
-      label="Contact"
-      :backgroundColor="'#28293e'"
-      :width="'138px'"
-      :height="'48px'"
-    />
   </div>
 </template>
 
@@ -43,6 +50,20 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &__content {
+    display: flex;
+    background-color: #28293e;
+    color: #ffffff;
+    justify-content: space-between;
+    padding: 16px 30px;
+
+    @media (min-width: 992px) {
+      padding: 16px 35px;
+    }
+    @media (min-width: 1280px) {
+      padding: 16px 135px;
+    }
+  }
 
   &__button {
     display: none;
