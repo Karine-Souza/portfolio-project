@@ -28,8 +28,6 @@
         class="menu__button"
         label="Contact"
         :backgroundColor="'#28293e'"
-        :width="'138px'"
-        :height="'48px'"
       />
     </div>
   </div>
@@ -51,17 +49,19 @@ export default {
   justify-content: space-between;
   align-items: center;
   &__content {
+    width: 100%;
     display: flex;
     background-color: #28293e;
     color: #ffffff;
     justify-content: space-between;
-    padding: 16px 30px;
+    align-items: center;
+    padding: 14px 35px;
 
     @media (min-width: 992px) {
-      padding: 16px 35px;
+      padding: 14px 35px;
     }
     @media (min-width: 1280px) {
-      padding: 16px 135px;
+      padding: 14px 135px;
     }
   }
 
