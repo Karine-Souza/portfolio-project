@@ -1,8 +1,5 @@
 <template>
   <div class="menu">
-    <div class="menu_logo">
-      <img src="../../assets/images/logo.png" class="footer_logoImg" />
-    </div>
     <div class="menu__links">
       <ul class="menu__list">
         <li class="menu__listItems">
@@ -44,17 +41,8 @@ export default {
 <style lang="scss">
 .menu {
   display: flex;
-  background-color: #28293e;
-  color: #ffffff;
   justify-content: space-between;
-  padding: 16px 30px;
-
-  @media (min-width: 992px) {
-    padding: 16px 35px;
-  }
-  @media (min-width: 1280px) {
-    padding: 16px 135px;
-  }
+  align-items: center;
 
   &__button {
     display: none;
