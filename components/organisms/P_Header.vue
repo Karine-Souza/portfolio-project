@@ -1,6 +1,11 @@
 <template>
   <div class="header">
-    <P_Menu />
+    <div class="header__menu">
+      <div class="menu_logo">
+        <img src="../../assets/images/logo.png" class="footer_logoImg" />
+      </div>
+      <P_Menu />
+    </div>
     <P_Hero_image
       class="Header__banner"
       :link="'ABOUT'"
@@ -28,6 +33,21 @@ export default {
 
 <style lang="scss">
 .header {
+  &__menu {
+    display: flex;
+    background-color: #28293e;
+    color: #ffffff;
+    justify-content: space-between;
+    padding: 16px 30px;
+
+    @media (min-width: 992px) {
+      padding: 16px 35px;
+    }
+    @media (min-width: 1280px) {
+      padding: 16px 135px;
+    }
+  }
+
   &__banner {
     .heroImage__container {
       .heroImage__textSide {
