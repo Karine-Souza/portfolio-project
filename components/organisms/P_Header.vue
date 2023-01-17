@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import P_Menu from "../organisms/P_Menu.vue";
+import P_Menu from "../molecules/P_Menu.vue";
 import P_Hero_image from "../molecules/P_Hero_image.vue";
 
 export default {
